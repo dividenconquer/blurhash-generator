@@ -33,6 +33,13 @@ cargo build --release
 ./target/release/blurhash-generator <folder_path> <output_path> [--sample <number>] [--chunk <number>]
 ```
 
+or 
+
+```bash
+sudo mv ./target/release/blurhash-generator /usr/local/bin/blurhash-generator 
+RUST_LOG=info blurhash-generator /Users/hakko/Desktop/folder /Users/hakko/Desktop/test.json 
+```
+
 ### Arguments
 
 - `folder_path`: Path to the directory containing images
